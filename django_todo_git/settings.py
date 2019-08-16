@@ -93,8 +93,17 @@ WSGI_APPLICATION = 'django_todo_git.wsgi.application'
 #    }
 #}
 
+
 DATABASES = {'default': dj_database_url.parse("postgres://sxbrbwfqwfmeap:4e195de862c476be2cda3a4ad7995b2bae38cfd7da9df19e10421b494a01fb05@ec2-54-247-85-251.eu-west-1.compute.amazonaws.com:5432/d1gqsdc5h6n7qr")
 }
+
+
+#DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL") 
+    
+#}
+
+
+
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
